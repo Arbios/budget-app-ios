@@ -12,6 +12,12 @@
 		5A2151D321374FAF0055A2E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D121374FAF0055A2E0 /* Main.storyboard */; };
 		5A2151D521374FAF0055A2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D421374FAF0055A2E0 /* Assets.xcassets */; };
 		5A2151D821374FAF0055A2E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D621374FAF0055A2E0 /* LaunchScreen.storyboard */; };
+		5A2151E02137567F0055A2E0 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */; };
+		5A287A99213E05820071CFE0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A287A98213E05820071CFE0 /* Transaction.swift */; };
+		5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */; };
+		5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C80213861260065AC51 /* VenuesTableViewController.swift */; };
+		5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C8221389A930065AC51 /* CategoryCell.swift */; };
+		5AA0CD33213E8D3900AEB5B5 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5A2151D421374FAF0055A2E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A2151D721374FAF0055A2E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A2151D921374FAF0055A2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		5A287A98213E05820071CFE0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		5A819C80213861260065AC51 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
+		5A819C8221389A930065AC51 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				5A2151D421374FAF0055A2E0 /* Assets.xcassets */,
 				5A2151D621374FAF0055A2E0 /* LaunchScreen.storyboard */,
 				5A2151D921374FAF0055A2E0 /* Info.plist */,
+				5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */,
+				5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */,
+				5A819C80213861260065AC51 /* VenuesTableViewController.swift */,
+				5A819C8221389A930065AC51 /* CategoryCell.swift */,
+				5A287A98213E05820071CFE0 /* Transaction.swift */,
+				5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */,
 			);
 			path = TechSwift2;
 			sourceTree = "<group>";
@@ -136,8 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A287A99213E05820071CFE0 /* Transaction.swift in Sources */,
 				5A2151D021374FAF0055A2E0 /* ViewController.swift in Sources */,
+				5A2151E02137567F0055A2E0 /* NewEntryViewController.swift in Sources */,
 				5A2151CE21374FAF0055A2E0 /* AppDelegate.swift in Sources */,
+				5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */,
+				5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */,
+				5AA0CD33213E8D3900AEB5B5 /* TransactionCell.swift in Sources */,
+				5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
