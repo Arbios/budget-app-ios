@@ -2,6 +2,9 @@ import UIKit
 
 class TransactionCell: UITableViewCell {
 
+    @IBOutlet weak var labelCategory: UILabel!
+    @IBOutlet weak var labelAmount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,15 +1,15 @@
 import UIKit
 
-class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableTransactions: UITableView!
-    
     var transactions: [Transaction] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tableTransactions.dataSource = self
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -23,6 +23,8 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
     // Обрабатываем событие
     func transactionCreated(transaction: Transaction) {
         transactions.append(transaction)
+        tableTransactions.reloadData()
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -33,10 +35,19 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return transactions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Просим у таблицы найти доступную для показа ячейку
+        // или создать новую
+        let cell = tableTransactions.dequeueReusableCell(withIdentifier: "TransactionCell") as! TransactionCell
+        
+        // Достаем транзакуию которую будем показывать
+        let transaction = transactions[indexPath.row]
+        cell.labelCategory.text = transaction.category
+        cell.labelAmount.text = "\(transaction.amount)"
+        return cell
     }
     
 }
