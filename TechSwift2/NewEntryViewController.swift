@@ -50,7 +50,7 @@ class NewEntryViewController: UIViewController, CategoriesTableViewControllerDel
             if let amount = Int(text) {
                 print("You entered \(amount)")
                 
-                // создать новую транзакцию и передать ее
+                // Cоздать новую транзакцию и передать ее
                 // на экран списка затрат (самый первый экран)
                 
                 if let category = currentCategory {
