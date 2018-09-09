@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A12192B2142DFFD00E2F09F /* Transactions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A1219292142DFFD00E2F09F /* Transactions.xcdatamodeld */; };
 		5A2151CE21374FAF0055A2E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2151CD21374FAF0055A2E0 /* AppDelegate.swift */; };
 		5A2151D021374FAF0055A2E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2151CF21374FAF0055A2E0 /* ViewController.swift */; };
 		5A2151D321374FAF0055A2E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D121374FAF0055A2E0 /* Main.storyboard */; };
 		5A2151D521374FAF0055A2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D421374FAF0055A2E0 /* Assets.xcassets */; };
 		5A2151D821374FAF0055A2E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D621374FAF0055A2E0 /* LaunchScreen.storyboard */; };
 		5A2151E02137567F0055A2E0 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */; };
+		5A2357C8214545930015E342 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2357C7214545930015E342 /* CoreDataHelper.swift */; };
+		5A2357CB214546280015E342 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A2357C9214546280015E342 /* Model.xcdatamodeld */; };
 		5A287A99213E05820071CFE0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A287A98213E05820071CFE0 /* Transaction.swift */; };
 		5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */; };
 		5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C80213861260065AC51 /* VenuesTableViewController.swift */; };
@@ -22,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A12192A2142DFFD00E2F09F /* Transactions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Transactions.xcdatamodel; sourceTree = "<group>"; };
 		5A2151CA21374FAF0055A2E0 /* TechSwift2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechSwift2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2151CD21374FAF0055A2E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A2151CF21374FAF0055A2E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +31,8 @@
 		5A2151D721374FAF0055A2E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A2151D921374FAF0055A2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		5A2357C7214545930015E342 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		5A2357CA214546280015E342 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5A287A98213E05820071CFE0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		5A819C80213861260065AC51 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +82,8 @@
 				5A819C8221389A930065AC51 /* CategoryCell.swift */,
 				5A287A98213E05820071CFE0 /* Transaction.swift */,
 				5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */,
-				5A1219292142DFFD00E2F09F /* Transactions.xcdatamodeld */,
+				5A2357C7214545930015E342 /* CoreDataHelper.swift */,
+				5A2357C9214546280015E342 /* Model.xcdatamodeld */,
 			);
 			path = TechSwift2;
 			sourceTree = "<group>";
@@ -158,12 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A287A99213E05820071CFE0 /* Transaction.swift in Sources */,
-				5A12192B2142DFFD00E2F09F /* Transactions.xcdatamodeld in Sources */,
 				5A2151D021374FAF0055A2E0 /* ViewController.swift in Sources */,
 				5A2151E02137567F0055A2E0 /* NewEntryViewController.swift in Sources */,
 				5A2151CE21374FAF0055A2E0 /* AppDelegate.swift in Sources */,
 				5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */,
 				5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */,
+				5A2357C8214545930015E342 /* CoreDataHelper.swift in Sources */,
+				5A2357CB214546280015E342 /* Model.xcdatamodeld in Sources */,
 				5AA0CD33213E8D3900AEB5B5 /* TransactionCell.swift in Sources */,
 				5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */,
 			);
@@ -352,13 +356,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5A1219292142DFFD00E2F09F /* Transactions.xcdatamodeld */ = {
+		5A2357C9214546280015E342 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5A12192A2142DFFD00E2F09F /* Transactions.xcdatamodel */,
+				5A2357CA214546280015E342 /* Model.xcdatamodel */,
 			);
-			currentVersion = 5A12192A2142DFFD00E2F09F /* Transactions.xcdatamodel */;
-			path = Transactions.xcdatamodeld;
+			currentVersion = 5A2357CA214546280015E342 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

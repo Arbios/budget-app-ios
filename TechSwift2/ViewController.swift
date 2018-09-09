@@ -1,5 +1,4 @@
 import UIKit
-import CoreData
 
 class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableViewDataSource {
 
@@ -11,10 +10,7 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableTransactions.dataSource = self
-        
-        let delegate = self
-        delegate.numberOfSections(in: tableTransactions)
-        
+
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
