@@ -14,7 +14,7 @@
 		5A2151D821374FAF0055A2E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2151D621374FAF0055A2E0 /* LaunchScreen.storyboard */; };
 		5A2151E02137567F0055A2E0 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */; };
 		5A2357C8214545930015E342 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2357C7214545930015E342 /* CoreDataHelper.swift */; };
-		5A4910E42148026C009D1ED5 /* TechDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A4910E22148026C009D1ED5 /* TechDB.xcdatamodeld */; };
+		5A6718F5214D5257003FE1B8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6718F4214D5257003FE1B8 /* Transaction.swift */; };
 		5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */; };
 		5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C80213861260065AC51 /* VenuesTableViewController.swift */; };
 		5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C8221389A930065AC51 /* CategoryCell.swift */; };
@@ -31,7 +31,7 @@
 		5A2151D921374FAF0055A2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A2151DF2137567F0055A2E0 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
 		5A2357C7214545930015E342 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		5A4910E32148026C009D1ED5 /* TechDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TechDB.xcdatamodel; sourceTree = "<group>"; };
+		5A6718F4214D5257003FE1B8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		5A819C7E213860AE0065AC51 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		5A819C80213861260065AC51 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 		5A819C8221389A930065AC51 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				5A819C8221389A930065AC51 /* CategoryCell.swift */,
 				5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */,
 				5A2357C7214545930015E342 /* CoreDataHelper.swift */,
-				5A4910E22148026C009D1ED5 /* TechDB.xcdatamodeld */,
+				5A6718F4214D5257003FE1B8 /* Transaction.swift */,
 			);
 			path = TechSwift2;
 			sourceTree = "<group>";
@@ -159,13 +159,13 @@
 			files = (
 				5A2151D021374FAF0055A2E0 /* ViewController.swift in Sources */,
 				5A2151E02137567F0055A2E0 /* NewEntryViewController.swift in Sources */,
-				5A4910E42148026C009D1ED5 /* TechDB.xcdatamodeld in Sources */,
 				5A2151CE21374FAF0055A2E0 /* AppDelegate.swift in Sources */,
 				5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */,
 				5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */,
 				5A2357C8214545930015E342 /* CoreDataHelper.swift in Sources */,
 				5AA0CD33213E8D3900AEB5B5 /* TransactionCell.swift in Sources */,
 				5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */,
+				5A6718F5214D5257003FE1B8 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,19 +350,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5A4910E22148026C009D1ED5 /* TechDB.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5A4910E32148026C009D1ED5 /* TechDB.xcdatamodel */,
-			);
-			currentVersion = 5A4910E32148026C009D1ED5 /* TechDB.xcdatamodel */;
-			path = TechDB.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5A2151C221374FAF0055A2E0 /* Project object */;
 }

@@ -47,16 +47,17 @@ class NewEntryViewController: UIViewController, CategoriesTableViewControllerDel
     
     @IBAction func tapDone(_ sender: Any) {
         if let text = textFieldAmount.text {
-            if let amount = Int(text) {
+            if let amount = Double(text) {
                 print("You entered \(amount)")
                 
                 // Cоздать новую транзакцию и передать ее
                 // на экран списка затрат (самый первый экран)
                 
                 if let category = currentCategory {
-                    let transaction = Transaction(category: category, amount: Double(amount), date: Date())
-                    // передать на первый экран и показать в списке
+                    let transaction = Transaction(category: category, amount: amount)
                     delegate?.transactionCreated(transaction: transaction)
+                    // передать на первый экран и показать в списке
+//                    delegate?.transactionCreated(transaction: transaction)
                     
                 }
                 
