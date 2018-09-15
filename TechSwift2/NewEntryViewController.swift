@@ -54,7 +54,10 @@ class NewEntryViewController: UIViewController, CategoriesTableViewControllerDel
                 // на экран списка затрат (самый первый экран)
                 
                 if let category = currentCategory {
-                    let transaction = Transaction(category: category, amount: amount, date: Date)
+                    
+                    // Delete it
+                    let daaata = Date(timeIntervalSinceNow: 2222)
+                    let transaction = Transaction(category: category, amount: amount, date: daaata)
                     delegate?.transactionCreated(transaction: transaction)
                     // передать на первый экран и показать в списке
 //                    delegate?.transactionCreated(transaction: transaction)

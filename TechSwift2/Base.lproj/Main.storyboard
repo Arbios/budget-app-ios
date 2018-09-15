@@ -106,8 +106,8 @@
                                     <action selector="tapCancel:" destination="Zeo-14-CEh" eventType="touchUpInside" id="N1N-2Y-Apl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR6-oY-yvT">
-                                <rect key="frame" x="170" y="175" width="134" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR6-oY-yvT">
+                                <rect key="frame" x="230" y="175" width="74" height="30"/>
                                 <state key="normal" title="Категория"/>
                                 <connections>
                                     <segue destination="pbi-EY-SWe" kind="presentation" id="Jlz-WH-Bxa"/>
@@ -143,11 +143,16 @@
                             <constraint firstItem="KTB-FF-J9g" firstAttribute="top" secondItem="Q5g-NN-BMe" secondAttribute="top" constant="8" id="azT-rc-Z9Q"/>
                             <constraint firstItem="Q5g-NN-BMe" firstAttribute="trailing" secondItem="GSm-0z-Vp6" secondAttribute="trailing" constant="50" id="bMI-JJ-ZzR"/>
                             <constraint firstItem="GSm-0z-Vp6" firstAttribute="top" secondItem="BzS-we-YS1" secondAttribute="bottom" constant="8" id="chu-Xe-NNz"/>
+                            <constraint firstItem="66V-CK-Xbh" firstAttribute="leading" secondItem="Q5g-NN-BMe" secondAttribute="leading" constant="256" id="e5a-gk-UB4"/>
+                            <constraint firstItem="Q5g-NN-BMe" firstAttribute="trailing" secondItem="Jhf-Vf-Rlw" secondAttribute="trailing" constant="25.5" id="eDf-ez-qC2"/>
                             <constraint firstItem="Jhf-Vf-Rlw" firstAttribute="leading" secondItem="GSm-0z-Vp6" secondAttribute="trailing" constant="8" id="hLQ-2G-jQt"/>
                             <constraint firstItem="BzS-we-YS1" firstAttribute="top" secondItem="UR6-oY-yvT" secondAttribute="bottom" constant="14" id="hUc-DZ-NQm"/>
+                            <constraint firstItem="BzS-we-YS1" firstAttribute="leading" secondItem="Q5g-NN-BMe" secondAttribute="leading" constant="259" id="lBx-ik-6f7"/>
                             <constraint firstItem="Jhf-Vf-Rlw" firstAttribute="centerY" secondItem="GSm-0z-Vp6" secondAttribute="centerY" id="rDF-1W-1jT"/>
                             <constraint firstItem="Q5g-NN-BMe" firstAttribute="trailing" secondItem="BzS-we-YS1" secondAttribute="trailing" constant="16" id="rEH-dF-XnP"/>
                             <constraint firstItem="66V-CK-Xbh" firstAttribute="centerY" secondItem="KTB-FF-J9g" secondAttribute="centerY" id="ryc-IF-EJB"/>
+                            <constraint firstItem="Q5g-NN-BMe" firstAttribute="trailing" secondItem="KTB-FF-J9g" secondAttribute="trailing" constant="248" id="vZG-6e-gz3"/>
+                            <constraint firstItem="UR6-oY-yvT" firstAttribute="leading" secondItem="Q5g-NN-BMe" secondAttribute="leading" constant="230" id="z51-Ni-NOc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q5g-NN-BMe"/>
                     </view>
