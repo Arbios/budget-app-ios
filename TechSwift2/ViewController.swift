@@ -22,7 +22,7 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
         
     }
     
-    // Обрабатываем событие
+    // Обрабатываем событие делегата
     func transactionCreated(transaction: Transaction) {
         transactions.append(transaction)
         tableTransactions.reloadData()
@@ -31,10 +31,6 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
     
     
     // MARK: - Table View
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return transactions.count
@@ -47,8 +43,9 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
         
         // Достаем транзакуию которую будем показывать
         let transaction = transactions[indexPath.row]
+        
         cell.labelCategory.text = transaction.category
-        cell.labelAmount.text = "\(transaction.amount)"
+        cell.labelAmount.text = "₽\(transaction.amount)"
         return cell
     }
     

@@ -19,6 +19,7 @@
 		5A819C81213861260065AC51 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C80213861260065AC51 /* VenuesTableViewController.swift */; };
 		5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A819C8221389A930065AC51 /* CategoryCell.swift */; };
 		5AA0CD33213E8D3900AEB5B5 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */; };
+		5AADA81C214DA36B00BBC02F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AADA81A214DA36B00BBC02F /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5A819C80213861260065AC51 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 		5A819C8221389A930065AC51 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		5AADA81B214DA36B00BBC02F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				5AA0CD32213E8D3900AEB5B5 /* TransactionCell.swift */,
 				5A2357C7214545930015E342 /* CoreDataHelper.swift */,
 				5A6718F4214D5257003FE1B8 /* Transaction.swift */,
+				5AADA81A214DA36B00BBC02F /* Model.xcdatamodeld */,
 			);
 			path = TechSwift2;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				5A819C7F213860AE0065AC51 /* CategoriesTableViewController.swift in Sources */,
 				5A2357C8214545930015E342 /* CoreDataHelper.swift in Sources */,
 				5AA0CD33213E8D3900AEB5B5 /* TransactionCell.swift in Sources */,
+				5AADA81C214DA36B00BBC02F /* Model.xcdatamodeld in Sources */,
 				5A819C8321389A930065AC51 /* CategoryCell.swift in Sources */,
 				5A6718F5214D5257003FE1B8 /* Transaction.swift in Sources */,
 			);
@@ -350,6 +354,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AADA81A214DA36B00BBC02F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AADA81B214DA36B00BBC02F /* Model.xcdatamodel */,
+			);
+			currentVersion = 5AADA81B214DA36B00BBC02F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5A2151C221374FAF0055A2E0 /* Project object */;
 }
