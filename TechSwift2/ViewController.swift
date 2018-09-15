@@ -4,7 +4,7 @@ import CoreData
 class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableViewDataSource {
     var nsManagedObjectContext: NSManagedObjectContext?
     @IBOutlet weak var tableTransactions: UITableView!
-    var transactions: [Transaction] = []
+    var transactions: [Transaction] = Transaction.getAllTransactions()
     
     
     override func viewDidLoad() {
@@ -24,7 +24,12 @@ class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableV
     
     // Обрабатываем событие делегата
     func transactionCreated(transaction: Transaction) {
-        transactions.append(transaction)
+        do {
+            try CoreDataHelper.main.context.save()
+        } catch let error {
+            print("Ошибка сохранения данных в базу \(error)")
+        }
+        transactions = Transaction.getAllTransactions()
         tableTransactions.reloadData()
         dismiss(animated: true, completion: nil)
     }
