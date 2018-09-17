@@ -1,6 +1,5 @@
 import UIKit
 import CoreData
-
 class ViewController: UIViewController, NewEntryViewControllerDelegate, UITableViewDataSource {
     var nsManagedObjectContext: NSManagedObjectContext?
     @IBOutlet weak var tableTransactions: UITableView!

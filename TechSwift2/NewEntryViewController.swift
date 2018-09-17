@@ -13,19 +13,23 @@ protocol NewEntryViewControllerDelegate: NSObjectProtocol {
 }
 
 
-class NewEntryViewController: UIViewController, CategoriesTableViewControllerDelegate {
+class NewEntryViewController: UIViewController, CategoriesTableViewControllerDelegate, VenuesViewControllerDelegate {
     func sendData(category: String) {
         selectCategoryButton.setTitle(category, for: .normal)
         currentCategory = category
         
     }
-    
+    func venueSelected(_ venue: Venue) {
+        selectVenueButton.setTitle(venue.name, for: .normal)
+        dismiss(animated: true, completion: nil)
+    }
 
     var currentCategory: String?
     
     weak var delegate: NewEntryViewControllerDelegate?
     
     @IBOutlet weak var selectCategoryButton: UIButton!
+    @IBOutlet weak var selectVenueButton: UIButton!
     @IBOutlet weak var textFieldAmount: UITextField!
     
     override func viewDidLoad() {
@@ -36,10 +40,15 @@ class NewEntryViewController: UIViewController, CategoriesTableViewControllerDel
         let navigation = segue.destination as! UINavigationController
         if let categoriesController = navigation.viewControllers.first as? CategoriesTableViewController {
             categoriesController.delegate = self
+        } else if let venuesController = navigation.viewControllers.first as? VenuesTableViewController {
+            venuesController.delegate = self
         }
         
         print("Prepared for segue")
     }
+    
+    
+    
     
     @IBAction func tapCancel(_ sender: Any) {
         presentingViewController?.dismiss(animated: true, completion: nil)
