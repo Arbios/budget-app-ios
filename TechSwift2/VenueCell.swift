@@ -1,11 +1,3 @@
-//
-//  VenueCell.swift
-//  TechSwift2
-//
-//  Created by ARBI BASHAEV on 17/09/2018.
-//  Copyright © 2018 ARBI BASHAEV. All rights reserved.
-//
-
 import UIKit
 
 class VenueCell: UITableViewCell {
